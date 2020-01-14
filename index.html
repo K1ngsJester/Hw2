@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RPS</title>
+    <link rel="stylesheet" href="final.css"> <!-- used to reference stylesheet -->
+    </head>
+<body>
+    <section id="introScreen"> <!-- create an intial section to be viewed upon load -->
+        <h1>FIRE, PLANT OR WATER<BR>Ready to play?</h1>
+            
+        <button type="button" id="start">Click to Start!</button>
+        
+        <h2>The rules are simple, best 5 of nine games, Fire beats plants, Plants beat water and Water beats plants. Hover to see animation.</h2>
+            
+        <p class="BTN fire"></p> <!-- two classes, one for placement and the other for play rate of png pictures -->
+        <p class="BTN plant"></p>
+        <p class="BTN water"></p>
+
+
+    </section>
+    <section id="gameScreen"> <!--second screen with game -->
+    <div id="container">
+        <div id="colume1">
+            <button class="BTN fire"  id="f"></button>
+            <button class="BTN plant"  id="p"></button>
+            <button class="BTN water"  id="w"></button>
+
+        </div>
+        <div id="colume2">
+            <h1>Choose and see your result below:</h1>
+            <div class="score-board">
+                <div id="user-label" class="badge">user</div>
+                <div id="computer-label" class="badge">comp</div>
+                    <span id="user-score">0</span>
+                    <span>:</span>
+                    <span id="computer-score">0</span>
+
+            </div>
+            <div class="result">
+                <p>Winning text is displayed here. Good Luck!</p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <section id="endScreen">
+        <p id="theEnd">Thank you for playing!!!</p>
+        <p class="BTN fire" id="f1"></p>
+        <p class="BTN plant" id="p1"></p>
+        <p class="BTN water" id="w1"></p>
+        
+    
+    </section>
+    
+    
+    
+    
+    <script src="final.js" charset="utf-8">
+
+    </script>
+    
+    </body>
+
+</html>
